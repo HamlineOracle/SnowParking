@@ -1,6 +1,8 @@
+let screenW = window.innerWidth
+let screenH = window.innerHeight
 
-let w = 500
-let h = w 
+let w 
+let h
 let mapIMG
 const d = new Date();
 let day = d.getDay();
@@ -14,6 +16,7 @@ if (hr < 7) {
 }
 
 let saintPaulSnowEmergencySite = 'https://www.stpaul.gov/departments/public-works/street-maintenance/snow-emergency'
+let hamlineParkingSite = 'https://www.hamline.edu/about/offices-services/public-safety/emergency'
 
 
 let lotList = ['A', 'A2', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'J']
@@ -63,6 +66,10 @@ function updateColor(lot) {
 }
 
 function setup() {
+  let lim = min(screenW, screenH)
+  w = lim*0.8
+  h = w
+
   createCanvas(w, h);
 }
 
