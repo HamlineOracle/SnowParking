@@ -89,15 +89,23 @@ function draw() {
     //Pascal
     line(w*0.92, h*0.21, w*0.92, h)
     //Simpson
-    stroke(200, 150)
+    stroke(255, 0, 0, 80)
+    line(w*0.705, h*0.78, w*0.705, h*0.978)
+    if (lotStatus[day]['B']) {
+      stroke(200, 150)
+    }
     line(w*0.7, h*0.21, w*0.7, h*0.39)
+    //Asbury
+    stroke(255, 0, 0, 80)
+    line(w*0.456, h*0.78, w*0.456, h*0.978)
+
 
 
 
   //Horizontal Streets
     //Taylor
-    line(w*0.225, h*0.21, w*0.92, h*0.21)
     stroke(0, 0, 255, 80)
+    line(w*0.225, h*0.21, w*0.92, h*0.21)
     line(0, h*0.21, w*0.225, h*0.21)
     line(w*0.92, h*0.21, w, h*0.21)
 
