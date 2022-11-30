@@ -50,7 +50,7 @@ for (let i=0;i<7;i++) {
 
 
 function preload() {
-  mapIMG = loadImage('HamlineMap.png')
+  mapIMG = loadImage('HamlineMap2.png')
 }
 
 function updateColor(lot) {
