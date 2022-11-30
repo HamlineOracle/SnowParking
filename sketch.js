@@ -67,7 +67,7 @@ function updateColor(lot) {
 
 function setup() {
   let lim = min(screenW, screenH)
-  w = lim*0.8
+  w = lim*0.85
   h = w
 
   createCanvas(w, h);
@@ -77,7 +77,7 @@ function draw() {
   background(220);
   push();
   translate(w/2, h/2)
-  image(mapIMG, -w/2+20, -h/2, w-40, h)
+  image(mapIMG, -w/2+w*0.04, -h/2, w*0.92, h)
   pop();
 
   push();
@@ -192,8 +192,8 @@ function draw() {
   push(); //borders
   noStroke()
   fill(255)
-  rect(0,0, 20, h)
-  rect(w-20, 0, w, h)
+  rect(0,0, w*0.04, h)
+  rect(w*0.96, 0, w, h)
   pop();
 
   push()
