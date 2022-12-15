@@ -42,6 +42,23 @@
       text-align: right;
       display: inline-grid;
     }
+    @media screen and (max-width: 600px) {
+      #embedInfo {
+        display: none;
+      }
+    }
+
+    #embedInfo {
+      display: none;
+      font-family: 'Roboto Slab', 'Merriweather', 'serif', 'Helvetica';
+      position: fixed;
+      top: 40px;
+      right: 10px;
+      width: 20vw;
+      font-size: 12px;
+      overflow-wrap: break-word;
+
+    }
     .g {
       background-color: rgba(0, 255, 0, 0.4);
     }
@@ -71,7 +88,12 @@
     <p class="r">Red lots will be plowed overnight from 11pm-7am&nbsp;&nbsp;</p>
     <p class="b">Blue streets will be plowed during the day from 8am-5pm&nbsp;&nbsp;</p>
     <p class="r">Red streets will be plowed overnight from 9pm-8am&nbsp;&nbsp;</p>  
+  </div>
 
+  <div id="embedInfo">
+    <h3>To embed this map, copy and paste the following code into your website:</h3>
+    <p>&lt;iframe src="https://hamlineoracle.github.io/SnowParking/" width="600" height="800" frameBorder="0" >&lt;/iframe></p>
+    
   </div>
 
  </body>
