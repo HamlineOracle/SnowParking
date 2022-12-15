@@ -44,6 +44,22 @@ for (let i=0;i<7;i++) {
   lotStatus[i] = temp
 }
 
+let incidentalDate = 'Thu Dec 15 2022'
+let incidentals = {
+  'B':-1,
+  'G':-1
+}
+
+function applyIncidentals() {
+  if (fullDate == incidentalDate) {
+    for (let i of Object.keys(incidentals)) {
+      lotStatus[day][i] = incidentals[i]
+    }
+
+  }
+}
+
+applyIncidentals()
 
 
 
@@ -56,9 +72,12 @@ function preload() {
 function updateColor(lot) {
   avail = lotStatus[day][lot]
   //console.log(lot, avail)
+  incidental = incidentals[lot]
 
-  if (avail) {
+  if (avail > 0) {
     fill(0, 255, 0, 80)
+  } else if (avail==-1) {
+    fill(255, 0, 0, 180)
   }
   else {
     fill(255, 0, 0, 80)
