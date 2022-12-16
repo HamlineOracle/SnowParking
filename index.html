@@ -83,7 +83,10 @@
   </main>
 
   <div id="explainer">
-    <p class="incidental">Lots B and G will be plowed starting at 3pm today</p>
+    <p class="incidental" id="incidentalMSG"></p>
+    <script>
+      document.getElementById("incidentalMSG").innerHTML = incidentalMessage
+    </script>
     <p class="g">Green lots are available tonight&nbsp;&nbsp;</p>
     <p class="r">Red lots will be plowed overnight from 11pm-7am&nbsp;&nbsp;</p>
     <p class="b">Blue streets will be plowed during the day from 8am-5pm&nbsp;&nbsp;</p>

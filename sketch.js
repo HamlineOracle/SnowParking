@@ -44,18 +44,20 @@ for (let i=0;i<7;i++) {
   lotStatus[i] = temp
 }
 
-let incidentalDate = 'Thu Dec 15 2022'
+let incidentalDate = 'Fri Dec 16 2022'
 let incidentals = {
-  'B':-1,
-  'G':-1
+  'E':-1
 }
+let incidentalMessage = "Lot E will be plowed today starting at 3pm"
 
 function applyIncidentals() {
   if (fullDate == incidentalDate) {
     for (let i of Object.keys(incidentals)) {
       lotStatus[day][i] = incidentals[i]
     }
-
+  }
+  else {
+    incidentalMessage = ""
   }
 }
 
